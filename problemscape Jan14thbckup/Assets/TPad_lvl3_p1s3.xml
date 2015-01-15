@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Matches>
+	<Step>
+		<Pattern>(divide)(\s)((\w+(\s?)){0,3})((cost of red paintball)| 2)</Pattern>
+		<Action>true</Action>
+		<Answer> </Answer>
+	</Step>
+	<Step>
+		<Pattern>(divide)(\s)((\w+(\s?)){0,3})(cost of paintball)</Pattern>
+		<Action>false</Action>
+		<Answer>But different colored paintballs cost different!</Answer>
+	</Step>
+	<Step>
+		<Pattern>(divide)(\s)(by)(\s)(\d+)</Pattern>
+		<Action>false</Action>
+		<Answer>Hmmm. I think you need to check your numbers</Answer>
+	</Step>
+	
+</Matches>

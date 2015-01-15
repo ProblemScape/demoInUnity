@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemSet>
+	<Problem>
+		<Statement>I have 12 emeralds and 5 rubies. I want to get a pain;/tball shooter with as many red paintballs as I can afford</Statement>
+		<Answer>15</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 5 sapphires, 4 emeralds, and 5 rubies. I want to get a lot of red paintballs with a shooter</Statement>
+		<Answer>20</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 2 sapphires, and 9 emeralds. Get me as many red paintballs as I have gems for and a shooter</Statement>
+		<Answer>15</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 1 topaz, 7 emeralds, and 1 ruby. Get me red paintballs!!! And oh, a shooter too</Statement>
+		<Answer>13</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 4 emeralds and 2 rubies. Get me red paintballs! I don't need a shooter</Statement>
+		<Answer>11</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 1 topaz, and 6 emeralds. I want a shooter and some green paintballs!!! </Statement>
+		<Answer>5</Answer>
+	</Problem>
+</ProblemSet>

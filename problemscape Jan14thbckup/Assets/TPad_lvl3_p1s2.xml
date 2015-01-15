@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Matches>
+	<Step>
+		<Pattern>(subtract)(\s)((\w+(\s?)){0,4})(paintball shooter)</Pattern>
+		<Action>true</Action>
+		<Answer> </Answer>
+	</Step>
+	<Step>
+		<Pattern>(subtract)(\s*)((\w+(\s?)){0,4})(36)</Pattern>
+		<Action>true</Action>
+		<Answer></Answer>
+	</Step>
+	<Step>
+		<Pattern>(subtract)(\s*)((\w+(\s?)){0,4})(\d+)</Pattern>
+		<Action>false</Action>
+		<Answer>Hmmm. I think you need to check your numbers</Answer>
+	</Step>
+	
+</Matches>

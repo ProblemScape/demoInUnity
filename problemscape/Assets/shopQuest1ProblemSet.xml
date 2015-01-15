@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProblemSet>
+	<Problem>
+		<Statement>I have 13 emeralds and 3 rubies.</Statement>
+		<Answer>68</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 4 emeralds, and 5 rubies. </Statement>
+		<Answer>25</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 11 emeralds, and 2 rubies. </Statement>
+		<Answer>57</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 7 emeralds, and 1 ruby. </Statement>
+		<Answer>36</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have 4 emeralds and 2 rubies. </Statement>
+		<Answer>22</Answer>
+	</Problem>
+	<Problem>
+		<Statement>I have and 16 emeralds. </Statement>
+		<Answer>80</Answer>
+	</Problem>
+</ProblemSet>
