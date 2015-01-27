@@ -30,6 +30,7 @@ public class shopQuest : MonoBehaviour {
 	// Update is called once per frame
 	void OnGUI () {
 		GUI.skin = mySkin;
+		GUI.Box(new Rect (140, 400, 160, 40), "A Sample Quest");
 		GUI.depth = 10;
 		if (boxOpen) {
 			if (GUI.Button (new Rect (0, 0, 1024, 768), invBtn)) {
@@ -128,7 +129,7 @@ public class shopQuest : MonoBehaviour {
 */
 	public void parseXMLProblemSet(string path)
 	{
-		print ("Reading XML File from "+Application.dataPath);
+		//print ("Reading XML File from "+Application.dataPath);
 
 		XmlDocument xmlDoc = new XmlDocument ();
 		xmlDoc.Load (path);

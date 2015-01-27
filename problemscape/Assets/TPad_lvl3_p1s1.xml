@@ -15,7 +15,21 @@
 		<p2Action></p2Action>
 	</Step>
 	<Step>
-		<Pattern>(\d+)(\s*)(\+|\-|\/)(\s*)(\d+)(\s*)(\*|\-|\/)(\s*)(\d+)</Pattern>
+		<Pattern>(12)(\s*)(\+|\-|\/)(\s*)(5)(\s*)(\*|\-|\/)(\s*)(6)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(5)(\s*)(\*|\-|\/)(\s*)(6)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(12)(\s*)(\+|\-|\/)(\s*)(5)</Pattern>
 		<Action>false</Action>
 		<Answer>Are you doing the right operations?</Answer>
 		<p2Answer></p2Answer>
@@ -29,10 +43,73 @@
 		<p2Action></p2Action>
 	</Step>
 	<Step>
+		<Pattern>(multiply)(\s)((\w+(\s?)){0,3})(\d+)(\s)((\w+(\s?)){0,3})(\d+)(\s)((\w+(\s?)){0,5})(add)(\s)((\w+(\s?)){0,3})(\d+)</Pattern>
+		<Action>false</Action>
+		<Answer>Hmmm. I think you need to check your numbers</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(12)(\s)((\w+(\s?)){0,3})(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(6)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(12)(\s)((\w+(\s?)){0,3})(5)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(emeralds)(\s)((\w+(\s?)){0,3})(5)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(6)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(rubies)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<!--<Step>
+		<Pattern>(5)(\s*)(\*|\-|\/)(\s*)(6)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(12)(\s*)(\+|\-|\/)(\s*)(5)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>-->
+	<Step>
 		<Pattern>(multiply)(\s)((\w+(\s?)){0,3})(emeralds)(\s)((\w+(\s?)){0,3})(5)(\s)((\w+(\s?)){0,5})(add)(\s)((\w+(\s?)){0,3})(rubies)</Pattern>
 		<Action>true</Action>
 		<Answer> </Answer>
-		<p2Answer>Multiply 10 by 5 and add 10. Missy has 60 Rubies.\n Yes! That is correct.</p2Answer>
+		<p2Answer>Multiply 10 by 5 and add 10. Missy has 60 Rubies. Yes! That is correct.</p2Answer>
+		<p2Action>true</p2Action>
+	</Step>
+	<Step>
+		<Pattern>(emeralds)(\s?)(\*|times)(\s?)(5)(\s?)((\w+(\s?)){0,5})(add|plus|\+)(\s?)((\w+(\s?)){0,3})(rubies)</Pattern>
+		<Action>true</Action>
+		<Answer> </Answer>
+		<p2Answer>Multiply 10 by 5 and add 10. Missy has 60 Rubies. Yes! That is correct.</p2Answer>
 		<p2Action>true</p2Action>
 	</Step>
 	<Step>
@@ -50,7 +127,42 @@
 		<p2Action></p2Action>
 	</Step>
 	<Step>
-		<Pattern>(twelve|12)(\s*)(times)(\s*)(five|5)(\s*)(plus)(\s*)(six|6)</Pattern>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(emeralds)(\s)((\w+(\s?)){0,3})(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(6)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(emeralds)(\s)((\w+(\s?)){0,3})(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(rubies)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(12)(\s)((\w+(\s?)){0,3})(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(rubies)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(add|subtract|divide)(\s)((\w+(\s?)){0,3})(emeralds)(\s)((\w+(\s?)){0,3})(5)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(5)(\s)((\w+(\s?)){0,5})(multiply|subtract|divide)(\s)((\w+(\s?)){0,3})(rubies)</Pattern>
+		<Action>false</Action>
+		<Answer>Are you doing the right operations?</Answer>
+		<p2Answer></p2Answer>
+		<p2Action></p2Action>
+	</Step>
+	<Step>
+		<Pattern>(twelve|12)(\s*)(times)(\s*)(five|5)(\s*)(plus|\+)(\s*)(six|6)</Pattern>
 		<Action>true</Action>
 		<Answer> </Answer>
 		<p2Answer>Multiply 12 by 5 and add 6. I'm getting 66, but that is not correct</p2Answer>

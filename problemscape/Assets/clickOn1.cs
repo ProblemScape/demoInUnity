@@ -42,7 +42,7 @@ public class clickOn1 : MonoBehaviour {
 		inputExpression = new GUIContent ();
 		inputExpression.text = "";
 
-		dropdownBox = (Texture2D)Resources.Load("dropDownBox", typeof(Texture2D));
+		//dropdownBox = (Texture2D)Resources.Load("dropDownBox", typeof(Texture2D));
 
 		oneBtn   = (Texture2D)Resources.Load("one", typeof(Texture2D));
 		twoBtn   = (Texture2D)Resources.Load("two", typeof(Texture2D));
@@ -136,7 +136,7 @@ public class clickOn1 : MonoBehaviour {
 			}
 		}
 
-		GUI.Label(new Rect(key_xPos, key_yPos -50, 250,30), dropdownBox);
+		//GUI.Label(new Rect(key_xPos, key_yPos -50, 250,30), dropdownBox);
 		//Keypad
 		if (GUI.Button (new Rect (key_xPos, key_yPos, buttonSize, buttonSize), oneBtn)) {
 			inputExpression.text +="1";

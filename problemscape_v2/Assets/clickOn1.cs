@@ -70,8 +70,8 @@ public class clickOn1 : MonoBehaviour {
 		
 		
 		GUI.skin = mySkin; 
-		GUI.Label (new Rect (240, 100, 130, 30), "Enter Expression");
-		GUI.SetNextControlName ("a");
+		//GUI.Label (new Rect (240, 100, 130, 30), "Enter Expression");
+		/*GUI.SetNextControlName ("a");
 		expressionBoxString  = GUI.TextField (new Rect (xPos,     150, 30, 30), expressionBoxString);
 		GUI.SetNextControlName ("b");
 		expressionBoxString2 = GUI.TextField (new Rect (xPos+80,  150, 30, 30), expressionBoxString2);
@@ -89,7 +89,7 @@ public class clickOn1 : MonoBehaviour {
 		string focusBox = GUI.GetNameOfFocusedControl ();
 		//Debug.Log ("focusBox = " + focusBox);
 
-	
+*/	
 
 		//Keypad
 		if (GUI.Button (new Rect (key_xPos, key_yPos, buttonSize, buttonSize), oneBtn)) {
